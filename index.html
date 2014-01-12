@@ -20,11 +20,11 @@
 <!--<![endif]-->
 
 <head>
-    
+     
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-	<title>AETHELYON&trade;</title>
+	<title>AETHELYON&trade; - The Work of Stephen M. Walker II</title>
     
 	<!-- PEANUT BUTTER META TIME -->
 	<meta name="description" content="Stephen M. Walker II is an entrepreneur and visual artist, living in NYC.">
@@ -38,7 +38,9 @@
     
 	<!-- Splash Layout Styles -->
 	<style>
-        body { background: #000 url('00/img/bg-2400a.jpg') no-repeat center fixed; background-size: cover;}
+        body { background: #111 url('00/img/sfas-2880.jpg') no-repeat center fixed; background-size: cover; }
+		#grey-overlay { background:rgba(13,13,13,0.8); position: absolute; width: 100%; height: 100%; z-index: 0; margin: -22px 0 0 0;}
+		#container { z-index:2; color: #fff; }
         #name { top: 0; left: 0;}
         #name h1 { position: relative; }
         #name h1 span { font-size: .45em; position: absolute; top: .5em; }
@@ -46,10 +48,10 @@
         #desc h2 { padding: 8px 0 0 0; }
         #cntct { bottom: 0; left: 0; }
         #twttr { bottom: 0; right: 0; }
-        #twttr h2 span { color: #111 }
+        #twttr h2 span { color: #999 }
         .corner { padding: 3.2% 7%; position: absolute; text-transform: uppercase; }
-        .corner a { color: #000; }
-        .corner a:hover { color: #fff; }
+        .corner a { color: #fff; }
+        .corner a:hover { color: #009eff; }
         #qLbar { border-right: 1px solid #e2e2e2; }
         #qLpercentage { color: #c7c7c7; text-shadow: 0 1px 0 #b6b6b6; }
     </style>
@@ -60,6 +62,10 @@
 </head>
 
 <body>
+	
+	<div id="grey-overlay"></div>
+	
+	<div id="container">
 	
     <div id="name" class="corner">
         <h1>&#923;ETHELYON<span>&trade;</span></h1>
@@ -84,6 +90,8 @@
 		</h2>
 		
     </div>
+	
+	</div> <!-- CLOSE #CONTAINER -->
 	
 	<!-- Modernizr, jQuery, and More -->
     <script src="00/js/v/modernizr-2.7.1.min.js"></script>
