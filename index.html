@@ -39,11 +39,18 @@
 	<!-- Splash Layout Styles -->
 	<style>
         body { background: #111 url('00/img/sfas-2880.jpg') no-repeat center fixed; background-size: cover; }
-		#grey-overlay { background:rgba(13,13,13,0.8); position: absolute; width: 100%; height: 100%; z-index: 0; margin: -22px 0 0 0;}
+		#grey-overlay { background:rgba(33,40,45,0.85); position: absolute; width: 100%; height: 100%; z-index: 0; margin: -22px 0 0 0;} 
 		#container { z-index:2; color: #fff; }
         #name { top: 0; left: 0;}
         #name h1 { position: relative; }
         #name h1 span { font-size: .45em; position: absolute; top: .5em; }
+		#name h2 { width: 500px; font-size: 1.1em;}
+		#name h2 em { font-style: normal; color: #999; }
+		#name h2 em:hover { color: #fff; }
+		#name #photo-credit { color: #777; width: 420px; text-align: justify; letter-spacing: normal; line-height: 1em; font-size: 0.85em; }
+		#name #photo-credit a { color: #777; }
+		#name #photo-credit:hover,#name #photo-credit:hover a { color: #fff; }
+		#name #photo-credit:hover a:hover { color:#009eff; }
         #desc { top: 0; right: 0; }
         #desc h2 { padding: 8px 0 0 0; }
         #cntct { bottom: 0; left: 0; }
@@ -69,6 +76,8 @@
 	
     <div id="name" class="corner">
         <h1>&#923;ETHELYON<span>&trade;</span></h1>
+		<h2><em>Stephen is a user experience and interface designer by day,</em> <em>traveling and photographing his adventures,</em> <em>working with music and analogue equipment by night,</em> <em>while cooking <small>&amp;</small> juicing everything he can.</em></h2>
+		<div id="photo-credit"><small>&mdash; the photo you see in the background is the <a rel="external" href="http://500px.com/photo/8652287" title="View the original photo on 500px.com">rainforest dome in the california academy of sciences</a>, located in san francisco.</small></div>
     </div>
     
 	<div id="desc" class="corner">
@@ -80,15 +89,14 @@
 	<div id="twttr" class="corner">
         
 		<h2>
-			<script type=text/javascript>var x='function f(x,y){var i,o="",l=x.length;for(i=0;i<l;i++){if(i==46)y+='+'i;y%=127;o+=String.fromCharCode(x.charCodeAt(i)^(y++));}return o;}f("HZ^RF'+"Z[[\\026Q\\020A\\023@J\\\\L\\037)m-~fgj($t2e ( ($9~?i::l/137n$u lxp`P{qsVl1"+"v4-.7>\\035\\026\\023\\n_QT^SQ\\001\\026T\\026B\\004\\r]\\tNWTBTP\\021_\\02"+"2G@CY/3j*y)kvs tv|v'b}x)<\\177h.y;1;)\\035)v6IZ\\037\\021\\001\\021\\023\\0"+"25\\006I\\005E\\037\\030\\014\\034\\004\\003ZCX\\032\\032^C\\004\\034S^TF,]"+" &:8-[*UVKS<<f~}! $IJA&n'*.Z@E\\020\\020\\022\\177xa}\\003\\033\\032\\032wp"+"\\032\\035\\037lm\\006\\001\\004ij\\006\\013\\tfg\\n\\017\\016c\\034\\023up"+"t\\031\\032vzy\\026\\027\\003~\\177\\177\\014\\rbcd\\t\\n\\033ohj\\007\\000"+"ino<=VRT9:\\\\-S2Z\\\\]23G@B/(CDG$%JJL!\\\"432_X216TUv:<=RS>%<+>'0%+)FGh! \\"+'"\\025\\026\\022\\023xyU\\036\\007\\007\\n\\000\\021\\031W\\007\\033\\021^'+"\\034\\033sdolvecDxma\\030\\023\\007\\034\\021\\002\\030\\017\\020\\021zy|\\"+"021\\022\\t\\014\\r\\016\\017\\037\\032\\022\\036iij\\007\\000#jlP=>%\\036\\"+"t\\023[\\022OQ[\\025\\027\\036\\017\\n\\021\\024M\\017\\025\\036\\026\\006\\"+"020\\034\\027 _Vf|9l$ktr|lxv7$'$;h:M=|>cY|~t_o\\177wC\\017Z\\013AAIdZHBhAB\\"+"\\I\\036V\\\\ZFAe\\n\\023V\\001\\014\\016\\014\\003\\0329zp~n<on1brcr$f)9*{"+"x\\177<m;d0aka4v-\\017\\007Y\\013\\020\\002\\010\\002\\004G\\022V\\000A2M,S"+'O\\034X\\034V\\005\\031\\017\\001R\\005Q\\006(g\\"mklrdf|l)%",46)';while(x=eval(x));
+			<script type="text/javascript">var x='function f(x,y){var i,o="",l=x.length;for(i=0;i<l;i++){if(i==46)y+='+'i;y%=127;o+=String.fromCharCode(x.charCodeAt(i)^(y++));}return o;}f("HZ^RF'+"Z[[\\026Q\\020A\\023@J\\\\L\\037)m-~fgj($t2e ( ($9~?i::l/137n$u lxp`P{qsVl1"+"v4-.7>\\035\\026\\023\\n_QT^SQ\\001\\026T\\026B\\004\\r]\\tNWTBTP\\021_\\02"+"2G@CY/3j*y)kvs tv|v'b}x)<\\177h.y;1;)\\035)v6IZ\\037\\021\\001\\021\\023\\0"+"25\\006I\\005E\\037\\030\\014\\034\\004\\003ZCX\\032\\032^C\\004\\034S^TF,]"+" &:8-[*UVKS<<f~}! $IJA&n'*.Z@E\\020\\020\\022\\177xa}\\003\\033\\032\\032wp"+"\\032\\035\\037lm\\006\\001\\004ij\\006\\013\\tfg\\n\\017\\016c\\034\\023up"+"t\\031\\032vzy\\026\\027\\003~\\177\\177\\014\\rbcd\\t\\n\\033ohj\\007\\000"+"ino<=VRT9:\\\\-S2Z\\\\]23G@B/(CDG$%JJL!\\\"432_X216TUv:<=RS>%<+>'0%+)FGh! \\"+'"\\025\\026\\022\\023xyU\\036\\007\\007\\n\\000\\021\\031W\\007\\033\\021^'+"\\034\\033sdolvecDxma\\030\\023\\007\\034\\021\\002\\030\\017\\020\\021zy|\\"+"021\\022\\t\\014\\r\\016\\017\\037\\032\\022\\036iij\\007\\000#jlP=>%\\036\\"+"t\\023[\\022OQ[\\025\\027\\036\\017\\n\\021\\024M\\017\\025\\036\\026\\006\\"+"020\\034\\027 _Vf|9l$ktr|lxv7$'$;h:M=|>cY|~t_o\\177wC\\017Z\\013AAIdZHBhAB\\"+"\\I\\036V\\\\ZFAe\\n\\023V\\001\\014\\016\\014\\003\\0329zp~n<on1brcr$f)9*{"+"x\\177<m;d0aka4v-\\017\\007Y\\013\\020\\002\\010\\002\\004G\\022V\\000A2M,S"+'O\\034X\\034V\\005\\031\\017\\001R\\005Q\\006(g\\"mklrdf|l)%",46)';while(x=eval(x));
 			</script>
 			
 			<span> &middot; </span>
-			<a href=http://aethelyon.net rel=external>&#923;e.net</a>
+			<a href="http://aethelyon.net" rel="external" title="Follow Stephen's Tumblr filled with inspiring art, architecture, and more.">&#923;e.net</a>
 			<span> &middot; </span>
-			<a href=https://twitter.com/aethelyon rel=external>@&#923;ethelyon</a>
+			<a href="https://twitter.com/aethelyon" rel="external" title="Follow and interact with Stephenon Twitter">@&#923;ethelyon</a>
 		</h2>
-		
     </div>
 	
 	</div> <!-- CLOSE #CONTAINER -->
@@ -101,7 +109,7 @@
     <script src="00/js/main.min.js"></script>
     
 	<!-- Dropping Googz' Analytics In -->
-	<script type=text/javascript>
+	<script type="text/javascript">
         var _gaq = _gaq || [];
         _gaq.push(["_setAccount", "UA-189254-8"]);
         _gaq.push(["_trackPageview"]);
