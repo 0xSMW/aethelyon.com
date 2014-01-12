@@ -1,31 +1,24 @@
 body {
-    padding: 1em 0 0 1em;
+    background: #111;
 }
-.corner {
+#grey-overlay, #desc, #name .meta {
+    display: none;
+    visibility: hidden;
+}
+#name, #desc, #twttr {
     position: relative;
-    display: inline;
     float: left;
-    font-size: 50%;
-    text-shadow: 0px 1px 1px #fff;
-    margin: 0 1em 0 0;
-    padding: 0;
+    clear: both;
 }
-.corner a {
-    color: #000;
+#name h2, #name .meta {
+    width: auto;
+    width: 100%;
 }
-.corner a:hover {
-    color: #fff;
-    text-shadow: 0px 1px #000;
-}
-#name {
-    margin: 0 5em 0 0;
+#container {
+    margin: -30px 0 0 0;
 }
 #twttr {
-    padding: 0.4em 0 0 0;
-}
-#desc {
-    font-size: 0.4em;
-    padding: 0;
-    visibility: hidden;
-    display: none;
+    font-size: 1em;
+    line-height: 3em;
+    margin-top: -40px;
 }
