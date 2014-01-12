@@ -1,0 +1,67 @@
+AddHandler php-legacy .php
+
+
+ExpiresActive On
+
+ExpiresDefault A604800
+ExpiresByType image/x-icon A2419200
+ExpiresByType application/x-javascript A300
+ExpiresByType text/css A300 
+ExpiresByType text/html A300
+
+<FilesMatch "\.(js|css)$">
+  ExpiresDefault A604800
+  Header append Cache-Control "public"
+  Header unset Last-Modified
+  Header unset ETag
+  FileETag None
+  SetOutputFilter DEFLATE
+</FilesMatch>
+
+<FilesMatch "\.(pl|php|cgi|spl|scgi|fcgi)$">
+ExpiresActive Off
+</FilesMatch>
+
+<FilesMatch "\cotton\.(css|js)$">
+ExpiresActive On
+ExpiresByType text/css A1
+</FilesMatch>
+
+
+Options +FollowSymLinks
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^aethelyon\.com$ [NC]
+RewriteRule ^(.*)$ http://www.aethelyon.com/$1 [R=301,L]
+
+# BEGIN (mt) controlled settings
+AddHandler php-legacy .php
+<IfModule pagespeed_module>
+  ModPagespeed On
+  
+  # CSS
+  ModPagespeedEnableFilters rewrite_css
+  ModPagespeedEnableFilters combine_css
+  ModPagespeedEnableFilters move_css_to_head
+  ModPagespeedEnableFilters inline_css
+  ModPagespeedEnableFilters inline_import_to_link
+  ModPagespeedEnableFilters move_css_above_scripts
+  
+  # JS
+  ModPagespeedEnableFilters combine_javascript
+  ModPagespeedEnableFilters canonicalize_javascript_libraries
+  ModPagespeedEnableFilters rewrite_javascript
+  ModPagespeedEnableFilters defer_javascript
+  ModPagespeedEnableFilters inline_javascript
+  
+  #HTML
+  ModPagespeedEnableFilters collapse_whitespace
+  ModPagespeedEnableFilters convert_meta_tags
+  ModPagespeedEnableFilters remove_comments
+  ModPagespeedEnableFilters collapse_whitespace
+  ModPagespeedEnableFilters elide_attributes
+  ModPagespeedEnableFilters trim_urls
+  ModPagespeedEnableFilters pedantic
+  
+</IfModule>
+# END (mt) controlled settings
+
