@@ -42,7 +42,7 @@
 	<!-- Splash Layout Styles -->
 	<style>
         body { background: #111 url('00/img/sfas-2880.jpg') no-repeat center fixed; background-size: cover; }
-		#grey-overlay { background:rgba(33,40,45,0.85); position: absolute; width: 100%; height: 100%; z-index: 0; margin: -22px 0 0 0;} 
+		#grey-overlay { background:rgba(33,40,45,0.95); position: absolute; width: 100%; height: 100%; z-index: 0; margin: -22px 0 0 0;} 
 		#container { z-index:2; color: #fff; }
         #name { top: 0; left: 0;}
         #name h1 { position: relative; }
@@ -108,9 +108,9 @@
 	<!-- Modernizr, jQuery, and More -->
     <script src="00/js/v/modernizr-2.7.1.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="00/js/v/jquery.queryloader2.min.js"></script>
+    <!--<script src="00/js/v/jquery.queryloader2.min.js"></script>-->
     <script src="00/js/plugins.min.js"></script>
-    <script src="00/js/main.min.js"></script>
+    <!--<script src="00/js/main.min.js"></script>-->
     
 	<!-- Dropping Googz' Analytics In -->
 	<script type="text/javascript">
@@ -132,9 +132,6 @@
         /*<![CDATA[*/
         jQuery(document).ready(function () {
             InitDefault();
-            setTimeout(function () {
-                $("<style>#name{animation:topdown 777ms;-moz-animation:topdown 777ms cubic-bezier(0.745,0.685,0.160,0.865);-webkit-animation:topdown 777ms cubic-bezier(0.745,0.685,0.160,0.865);-o-animation:topdown 777ms;}#desc{animation:topdown 777ms;-moz-animation:topdown 777ms cubic-bezier(0.745,0.685,0.160,0.865);-webkit-animation:topdown 777ms cubic-bezier(0.745,0.685,0.160,0.865);-o-animation:topdown 777ms;}#twttr{animation:bottomup 777ms;-moz-animation:bottomup 777ms cubic-bezier(0.745,0.685,0.160,0.865);-webkit-animation:bottomup 777ms cubic-bezier(0.745,0.685,0.160,0.865);-o-animation:bottomup 777ms;}@keyframes topdown{from{top:-100px;}to{top:0;}}@-moz-keyframes topdown{from{top:-100px;}to{top:0;}}@-webkit-keyframes topdown{from{top:-100px;}to{top:0;}}@-o-keyframes topdown{from{top:-100px;}to{top:0;}}@keyframes bottomup{from{bottom:-100px;}to{bottom:0;}}@-moz-keyframes bottomup{from{bottom:-100px;}to{bottom:0;}}@-webkit-keyframes bottomup{from{bottom:-100px;}to{bottom:0;}}@-o-keyframes bottomup{from{bottom:-100px;}to{bottom:0;}}</style>").appendTo("head")
-            }, 333)
         }); /*]]>*/
     </script>
 	

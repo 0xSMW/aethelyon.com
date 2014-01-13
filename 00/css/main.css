@@ -54,85 +54,101 @@ textarea {
     padding: 0.2em 0;
 }
 #name {
-    animation: topdown 777ms;
-    -moz-animation: topdown 777ms cubic-bezier(0.745, 0.685, 0.160, 0.865);
+    animation: topdown 477ms;
+    -moz-animation: topdown 477ms cubic-bezier(0.745, 0.685, 0.160, 0.865);
     -webkit-animation: topdown 777ms cubic-bezier(0.745, 0.685, 0.160, 0.865);
-    -o-animation: topdown 777ms;
+    -o-animation: topdown 477ms;
 }
 #desc {
-    animation: topdown 777ms;
-    -moz-animation: topdown 777ms cubic-bezier(0.745, 0.685, 0.160, 0.865);
-    -webkit-animation: topdown 777ms cubic-bezier(0.745, 0.685, 0.160, 0.865);
-    -o-animation: topdown 777ms;
+    animation: topdown 477ms;
+    -moz-animation: topdown 477ms cubic-bezier(0.745, 0.685, 0.160, 0.865);
+    -webkit-animation: topdown 1177ms cubic-bezier(0.745, 0.685, 0.160, 0.865);
+    -o-animation: topdown 477ms;
 }
 #twttr {
-    animation: bottomup 777ms;
-    -moz-animation: bottomup 777ms cubic-bezier(0.745, 0.685, 0.160, 0.865);
-    -webkit-animation: bottomup 777ms cubic-bezier(0.745, 0.685, 0.160, 0.865);
-    -o-animation: bottomup 777ms;
+    animation: bottomup 2777ms;
+    -moz-animation: bottomup 2777ms cubic-bezier(0.745, 0.685, 0.160, 0.865);
+    -webkit-animation: bottomup 2777ms cubic-bezier(0.745, 0.685, 0.160, 0.865);
+    -o-animation: bottomup 2777ms;
 }
 @keyframes topdown {
     from {
-    top: -100px;
+    top: -500px;
+	opacity: 0;
 }
 to {
     top: 0;
+	opacity: 1;
 }
 }
 @-moz-keyframes topdown {
     from {
-    top: -100px;
+    top: -500px;
+	opacity: 0;
 }
 to {
     top: 0;
+	opacity: 1;
 }
 }
 @-webkit-keyframes topdown {
     from {
-    top: -100px;
+    top: -500px;
+	opacity: 0;
 }
 to {
     top: 0;
+	opacity: 1;
 }
 }
 @-o-keyframes topdown {
     from {
-    top: -100px;
+    top: -500px;
+	opacity: 0;
 }
 to {
     top: 0;
+	opacity: 1;
 }
 }
 @keyframes bottomup {
     from {
-    bottom: -100px;
+    bottom: -500px;
+	opacity: 0;
 }
 to {
     bottom: 0;
+	opacity: 1;
 }
 }
 @-moz-keyframes bottomup {
     from {
-    bottom: -100px;
+    bottom: -500px;
+	opacity: 0;
 }
 to {
     bottom: 0;
+	opacity: 1;
 }
 }
 @-webkit-keyframes bottomup {
     from {
-    bottom: -100px;
+    bottom: -500px;
+	opacity: 0;
 }
 to {
     bottom: 0;
+	opacity: 1;
 }
 }
 @-o-keyframes bottomup {
     from {
-    bottom: -100px;
+    bottom: -500px;
+	opacity: 0;
 }
 to {
     bottom: 0;
+	opacity: 1;
 }
 }
 .ir {
