@@ -5,7 +5,7 @@ The code for <a href="http://aethelyon.com/">aethelyon.com</a>, the personal web
 
 <h2>Current Branches</h2>
 <ul>
-	<li>Master</li>
+	<li>Master (from 2014-spring)</li>
 	<li>2014-spring</li>
 </ul>
 
