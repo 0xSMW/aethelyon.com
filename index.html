@@ -1,240 +1,68 @@
-<!doctype html>
-<!--
-
-////// ////// //////
-
-AETHELYON.COM, 2003-PRESENT
-2014 Edition, R1.01202014
-UNCOMPRESSED, READABLE CODE AVAILABLE ON GITHUB 
-https://github.com/aethelyon/aethelyon.com/tree/2014-splash
-
-////// ////// //////
-
--->
-<!--[if lt IE 7 ]> <html class="no-js ie6" lang=en> <![endif]-->
-<!--[if IE 7 ]> <html class="no-js ie7" lang=en> <![endif]-->
-<!--[if IE 8 ]> <html class="no-js ie8" lang=en> <![endif]-->
-<!--[if IE 9 ]> <html class="no-js ie8" lang=en> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!-->
-<html class="no-js" lang="en">
-<!--<![endif]-->
-
+<!DOCTYPE html> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
 <head>
-     
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    
-	<title>AETHELYON&trade; - The Work of Stephen M. Walker II</title>
-    
-	<!-- PEANUT BUTTER META TIME -->
-	<meta name="description" content="Stephen M. Walker II is an entrepreneur and visual artist, living in NYC.">
-	<meta name="author" content="Stephen M. Walker II" />
-	<meta name="keywords" content="user experience director, photographer, dj, wallpapers" /> <!-- NOT SURE WHY THIS IS A THING STILL -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-    
-	<!-- BOILER ROOM. WAIT. NOT THAT MOVIE. BOILERPOINT! -->
-	<link rel="stylesheet" href="00/css/normalize.css">
-	<link rel="stylesheet" href="00/css/main.css" media="screen">
 	
-	<link rel="favicon" href="favicon.ico"/>
-	<link href="icon.svg" rel="apple-touch-icon" type="image/svg+xml" />
-    
-	<!-- Splash Layout Styles -->
-	<style>
-        body { height: 100% min-height:100%; }
-		#grey-overlay {  background: #111 url('00/img/sfas-2880.jpg') no-repeat center fixed; background-size: cover;  position: absolute; width: 100%; height: 100%; z-index: 0; margin: -22px 0 0 0; min-height:100% !important;} 
-		#container {background:rgba(33,40,45,0.95); z-index:2; color: #fff; width: 100%; height: 100%; }
-        #name { top: 0; left: 0;}
-        #name h1 { position: relative; }
-        #name h1 span { font-size: .45em; position: absolute; top: .5em; color: #aeaeae; }
-		#name h2 { width: 500px; font-size: 1.1em;}
-		#name h2 em { font-style: normal; color: #999; }
-		#name h2 em:hover { color: #fff; }
-		#name .meta { color: #777; width: 420px; text-align: justify; letter-spacing: normal; line-height: 1em; font-size: 0.85em; }
-		#name .meta a { color: #777; }
-		#name .meta:hover,#name .meta:hover a { color: #fff; }
-		#name .meta:hover a:hover { color:#009eff; }
-		#name .meta ul { list-style: none; margin: 0; padding: 0;}
-		#name .meta li { display: inline; }
-		#name .meta li small { letter-spacing: 4px; }
-		#name .meta li a { padding: 0 0.3em 0 0; }
-		#name .meta li.last a { padding: none; }
-        #desc { top: 0; right: 0; }
-        #desc h2 { padding: 8px 0 0 0; }
-        #cntct { bottom: 0; left: 0; }
-        #twttr { bottom: 0; right: 0; }
-        #twttr h2 span { color: #999 }
-        .corner { padding: 3.2% 7%; position: absolute; text-transform: uppercase; }
-        .corner a { color: #fff; }
-        .corner a:hover { color: #009eff; }
-        #qLbar { border-right: 1px solid #e2e2e2; }
-        #qLpercentage { color: #c7c7c7; text-shadow: 0 1px 0 #b6b6b6; }
-    </style>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width" />
+	<meta name="description" content="Stephen M. Walker II is an entrepreneur and visual artist, living in Seattle. Currently the Principal UX Designer at Capital One ShareBuilder." />
 	
-	<!-- Play Nice With Tablet Device Screens -->
-	<style media="screen AND (max-width:840px)">
-		body {background: #1F262B; }
-		#name h2 { padding: 58px 0 0 0; }
-		#desc {
-			left: 0; top: 58px;
-		    animation: dtopdown 677ms;
-		    -moz-animation: dtopdown 677ms cubic-bezier(0.745, 0.685, 0.160, 0.865);
-		    -webkit-animation: dtopdown 677ms cubic-bezier(0.745, 0.685, 0.160, 0.865);
-		    -o-animation: dtopdown 677ms;
-		}
-		#twttr { left: 0; }
-		@keyframes dtopdown {
-		    from {
-		    top: -500px;
-			opacity: 0;
-		}
-		to {
-		    top: 58px;
-			opacity: 1;
-		}
-		}
-		@-moz-keyframes dtopdown {
-		    from {
-		    top: -500px;
-			opacity: 0;
-		}
-		to {
-		    top: 58px;
-			opacity: 1;
-		}
-		}
-		@-webkit-keyframes dtopdown {
-		    from {
-		    top: -500px;
-			opacity: 0;
-		}
-		to {
-		    top: 58px;
-			opacity: 1;
-		}
-		}
-		@-o-keyframes dtopdown {
-		    from {
-		    top: -500px;
-			opacity: 0;
-		}
-		to {
-		    top: 58px;
-			opacity: 1;
-		}
-		}
-		@media screen and (max-device-width: 480px) {
-			#name, #desc, #twttr {
-			    position: relative;
-			    float: left;
-			    clear: both;
-			    animation: none;
-			    -moz-animation: none;
-			    -webkit-animation: none;
-			    -o-animation: none;
-			}
-			#name { top: -15px; }
-
-			#desc { position: absolute;}
-			#desc { top: 40px; }
-			#desc h2 { font-size: 0.9em; }
-
-			#name h2 { font-size: 0.8em; margin: -35px 0 0 0; }
-			#name h2, #name .meta {
-			    width: auto;
-			    width: 100%;
-			}
-			#name .meta { font-size: 0.8em;}
-			#name .meta ul { padding: 15px 0 0 0; }
-			#name .meta ul small { padding: none; letter-spacing: normal;}
-			#name .meta li { display:inline; clear:both; float: left; padding: 0 0 5px 0; }
-			#name #photo-credit { display:none; visibility:hidden; }
-			#twttr {
-			    font-size: 0.6em;
-				bottom: -55px;
-			}
-
-			
-		}
-	</style>
-    
-	<!-- Play Nice With Mobile Device Screens -->
-	<link rel=stylesheet href=00/css/mobile.css media="screen AND (max-width:480px)">
+  <title>AETHELYON&trade; / STEPHEN M. WALKER II</title>
+  
 	
-	
-	
+	<link href="http://fonts.googleapis.com/css?family=Lato:400,700,900,400italic" rel="stylesheet" type="text/css">
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="css/master.css" />
+  
+  <link type="image/ico" rel="shortcut icon" href="favicon.ico" />
+  
 </head>
 
-<body>
-	
-	<div id="grey-overlay">
-	
-	<div id="container">
-	
-    <div id="name" class="corner">
-        <h1><a title="Pronounced: A-THELL-E-ON">&#923;ETHELYON</a><span>&trade;</span></h1>
-		<h2><em>Stephen is a user experience and interface designer by day<small>,</small></em> <em>traveling and photographing his adventures<small>,</small></em> <em>working with music and analogue equipment by night<small>,</small></em> <em>while cooking <small>&amp;</small> juicing everything he can.</em></h2>
-		<div class="meta">
-			<ul>
-				<li><a href="http://500px.com/aethelyon" rel="external" title="A collection of photos.">500px</a><small>/</small></li>
-				<li><a href="http://delicious.com/aethelyon" rel="external" title="Important links saved for later.">Delicious</a><small>/</small></li>
-				<li><a href="http://instagram.com/aethelyon" rel="external" title="Small, square photos from my phone.">Instagram</a><small>/</small></li>
-				<li><a href="http://www.last.fm/user/aethelyon" rel="external" title="The music coming through my speakers.">Last.fm</a><small>/</small></li>
-				<li class="last"><a href="http://linkedin.com/in/stephenwalker" rel="external" title="My digital resume.">LinkedIn</a><small>/</small></li>
-				<!--<li class="last"><a href="http://portfolio.aethelyon.com/" rel="external" title="A collection of visual design work.">Portfolio</a></li>-->
-			</ul>
-		</div>
-		<div class="meta" id="photo-credit"><br /><small>&mdash; the photo you see in the background is the <a rel="external" href="http://500px.com/photo/8652287" title="View the original photo on 500px.com">rainforest dome in the california academy of sciences</a>, located in san francisco.</small></div>
+<body><div id="container" class="clearfix">
+  
+  <div id="grid">
+    <div class="grid25" id="name">
+      
+      <div>
+        <h1>Stephen M. Walker II</h1>
+        <p class="title">UX Designer / Entrepreneur / Photographer</p>
+      </div>
+      
     </div>
     
-	<div id="desc" class="corner">
-        <h2>The Work of Stephen M. W&#923;lker II</h2>
+    <div class="grid25" id="work">
+      
+      <div>
+        <h2>Work</h2>
+        <p>Principal UX Designer at <a href="http://www.sharebuilder.com">Capital One ShareBuilder</a> bringing wallstreet to your desktop and mobile device. <br/><br/><a href="mailto:sharebuilder-feedback@aethelyon.com">Want to change something? Let me know.</a></p>
+      </div>
+      
     </div>
-	
-    <div id="cntct" class="corner"></div>
     
-	<div id="twttr" class="corner">
-        
-		<h2>
-			<script type="text/javascript">var x='function f(x,y){var i,o="",l=x.length;for(i=0;i<l;i++){if(i==46)y+='+'i;y%=127;o+=String.fromCharCode(x.charCodeAt(i)^(y++));}return o;}f("HZ^RF'+"Z[[\\026Q\\020A\\023@J\\\\L\\037)m-~fgj($t2e ( ($9~?i::l/137n$u lxp`P{qsVl1"+"v4-.7>\\035\\026\\023\\n_QT^SQ\\001\\026T\\026B\\004\\r]\\tNWTBTP\\021_\\02"+"2G@CY/3j*y)kvs tv|v'b}x)<\\177h.y;1;)\\035)v6IZ\\037\\021\\001\\021\\023\\0"+"25\\006I\\005E\\037\\030\\014\\034\\004\\003ZCX\\032\\032^C\\004\\034S^TF,]"+" &:8-[*UVKS<<f~}! $IJA&n'*.Z@E\\020\\020\\022\\177xa}\\003\\033\\032\\032wp"+"\\032\\035\\037lm\\006\\001\\004ij\\006\\013\\tfg\\n\\017\\016c\\034\\023up"+"t\\031\\032vzy\\026\\027\\003~\\177\\177\\014\\rbcd\\t\\n\\033ohj\\007\\000"+"ino<=VRT9:\\\\-S2Z\\\\]23G@B/(CDG$%JJL!\\\"432_X216TUv:<=RS>%<+>'0%+)FGh! \\"+'"\\025\\026\\022\\023xyU\\036\\007\\007\\n\\000\\021\\031W\\007\\033\\021^'+"\\034\\033sdolvecDxma\\030\\023\\007\\034\\021\\002\\030\\017\\020\\021zy|\\"+"021\\022\\t\\014\\r\\016\\017\\037\\032\\022\\036iij\\007\\000#jlP=>%\\036\\"+"t\\023[\\022OQ[\\025\\027\\036\\017\\n\\021\\024M\\017\\025\\036\\026\\006\\"+"020\\034\\027 _Vf|9l$ktr|lxv7$'$;h:M=|>cY|~t_o\\177wC\\017Z\\013AAIdZHBhAB\\"+"\\I\\036V\\\\ZFAe\\n\\023V\\001\\014\\016\\014\\003\\0329zp~n<on1brcr$f)9*{"+"x\\177<m;d0aka4v-\\017\\007Y\\013\\020\\002\\010\\002\\004G\\022V\\000A2M,S"+'O\\034X\\034V\\005\\031\\017\\001R\\005Q\\006(g\\"mklrdf|l)%",46)';while(x=eval(x));
-			</script>
-			
-			<span> &middot; </span>
-			<a href="http://aethelyon.net" rel="external" title="Follow my Tumblr filled with the art, architecture, and photos that inspire me">&#923;e.net</a>
-			<span> &middot; </span>
-			<a href="https://twitter.com/aethelyon" rel="external" title="Follow and interact with me Twitter">@&#923;ethelyon</a>
-		</h2>
+    <div class="grid25" id="play">
+      
+      <div>
+        <h2>PLay</h2>
+        <p>Outside of work I travel the world, tinker with analogue music gear, take photos, and cook delicious meals. <br/><br/>Find me on Friendster.</p>
+      </div>
+      
     </div>
-	
-	</div> <!-- CLOSE #CONTAINER --></div>
-	
-	<!-- Modernizr, jQuery, and More -->
-	<script src="00/js/v/modernizr-2.7.1.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<!--<script src="00/js/v/jquery.queryloader2.min.js"></script>-->
-	<script src="00/js/plugins.min.js"></script>
-	<!--<script src="00/js/main.min.js"></script>-->
+    
+    <div class="grid25" id="social">
+      <ul>
+        <li class="social"><a class="symbol" href="http://500px.com/aethelyon">circlefivehundredpx</a></li>
+        <li class="social"><a class="symbol" href="https://delicious.com/aethelyon">circledelicious</a></li>
+        <li class="social"><a class="symbol" href="http://dribbble.com/aethelyon">circledribble</a></li>
+        <li class="social"><a class="symbol" href="http://instagram.com/aethelyon">circleinstagram</a></li>
+        <li class="social"><a class="symbol" href="http://linkedin.com/in/stephenwalker">circlelinkedin</a></li>
+        <li class="social"><a class="symbol" href="http://last.fm/user/aethelyon">circlelastfm</a></li>
+        <li class="social"><a class="symbol" href="http://twitter.com/aethelyon">circletwitterbird</a></li>
+      </ul>
+    </div>
+    
+  </div>
 
-	<!-- Dropping Googz' Analytics In -->
-	<script>
-	
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//stats.g.doubleclick.net/dc.js','ga');
-
-	  ga('create', 'UA-189254-8', 'aethelyon.com');
-	  ga('send', 'pageview');
-
-	</script>
-	
-	<!-- Initiation + FX -->
-    <script type="text/javascript">
-        /*<![CDATA[*/
-        jQuery(document).ready(function () {
-			SetExternalLinks();
-        }); /*]]>*/
-    </script>
-	
-</body>
+</div></body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript">$(window).load(function(){ $("#name, #work, #play,#social").addClass("fadein"); });
+</script>
 </html>
