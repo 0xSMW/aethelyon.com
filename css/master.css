@@ -5,299 +5,101 @@ a, abbr, acronym, address, big, cite, code, del, dfn, em,
 font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup,
 tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
 fieldset, form, label, button, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
-	margin: 0;
-	padding: 0;
-	font-size: 100%;
-	vertical-align: baseline;
-	border: 0;
-	outline: 0;
-	background: transparent;
-	}
-blockquote, q {
-	quotes: none;
-	}
-img {
-	display: block;
-	}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-	}
-:focus {
-	outline: 0;
-	}
+table, caption, tbody, tfoot, thead, tr, th, td { 
+margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; border: 0; outline: 0; background: transparent;}
+blockquote, q { quotes: none; }
+img { display: block; }
+table { border-collapse: collapse; border-spacing: 0; }
+:focus { outline: 0; }
+
 /* Clearfix ---------- */
-.clearfix:after {
-	content: ".";
-	display: block;
-	height: 0;
-	clear: both;
-	visibility: hidden;
-	}
-	/* IE6 */
-* html .clearfix {
-	height: 1%;
-	}
-	/* IE7 */
-*:first-child+html .clearfix {
-	min-height: 1px;
-	}
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+/* IE6 / REALLY? WHY? / IE7 FIXES */
+* html .clearfix { height: 1%; }
+*:first-child+html .clearfix { min-height: 1px; }
 
-/* Got DIN? YOU DO NOW! ---------- */
-@font-face {
-      font-family: 'Din';
-      src: url('..fonts/DIN.ttf') format('truetype');
-      font-weight: normal;
-      font-style: normal;
-}
+/* Got DIN? Got Mono Social? YOU DO NOW! ---------- */
+@font-face { font-family: 'Din'; src: url('..fonts/DIN.ttf') format('truetype'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Mono Social Icons Font'; src: url('../fonts/MonoSocialIconsFont-1.10.eot'); src: url('../fonts/MonoSocialIconsFont-1.10.eot?') format('embedded-opentype'), url('../fonts/MonoSocialIconsFont-1.10.woff') format('woff'), url('../fonts/MonoSocialIconsFont-1.10.ttf') format('truetype'), url('../fonts/MonoSocialIconsFont-1.10.svg') format('svg'); src: url('../fonts/MonoSocialIconsFont-1.10.ttf') format('truetype'); font-weight: normal; font-style: normal; }
 	
-/* The Basics ---------- */
-html {
-  height: 100%;
-  }
-  
-body {
-  background: #222;
-	background: -webkit-linear-gradient(top, #222 0%,#111 100%);
-  background: linear-gradient(to bottom, #222 0%,#111 100%);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-	color: rgba(255,255,255,0.7);
-	font: 400 18px/24px 'Din', Verdana, sans-serif;
-	height: 100%;
-	margin: 0;
-	-webkit-font-smoothing: antialiased;
-	}
-	
-#container {
-  padding: 10% 0 40px 10%;
-	width: 80%;
-	}
-  
-#grid .grid25 { display: inline; float: left; width: 25%; border-top: 1px solid #282828; }
-#grid .grid25 div { padding: 0 25px 0 0; }
+/* HTML Setup ---------- */
+html { height: 100%; }
 
+body { background: #222; background: -webkit-linear-gradient(top, #222 0%,#111 100%); background: linear-gradient(to bottom, #222 0%,#111 100%); background-repeat: no-repeat; background-attachment: fixed; color: rgba(255,255,255,0.7); font: 400 14px/24px 'Din', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif; height: 100%; margin: 0; -webkit-font-smoothing: antialiased; }
 
-a {
-  border-bottom: 1px solid rgba(255,255,255,0.3);
-  color: rgba(255,255,255,0.5);
-	text-decoration: none;
-  -webkit-transition: color 0.3s ease-out;
-	}
-  a:hover { color: rgba(255,255,255,1);  -webkit-transition: color 0.18s ease-in;}
-	
-h1 {
-  color: #fff;
-	font-size: 24px;
-	font-weight: 200;
-	margin-bottom: 14px;
-  margin-top: 32px;
-  text-transform: uppercase;
-	}
-	
-h2 {
-  color: #fff;
-  font-size: 14px;
-  font-weight: normal;
-  letter-spacing: 2px;
-  margin-top: 32px;
-  margin-bottom: 14px;
-  text-transform: uppercase;
-}
-	
-p {
-	margin: 0 0 16px 0;
-  font-size:14px;
-	}
-	
-strong {
-  color: #fff;
-  }
-  
-  ul { list-style:none;}
-  li { float: left;}
-  
-.title {
-  font-size: 12px;
-  font-weight: 100;
-  }
-  
-.likes {
-  font-size: 14px;
-  line-height: 18px;
-  margin-top: 32px;
-  }
-  
-.social {
-  font-size: 30px;
-  margin-top: 32px;
-  }
+a { border-bottom: 1px solid rgba(255,255,255,0.3); color: rgba(255,255,255,0.5); text-decoration: none; -webkit-transition: color 0.3s ease-out; }
+a:hover { color: rgba(255,255,255,1); -webkit-transition: color 0.18s ease-in; }
 
-  .social a {
-    border: none;
-    color: rgba(255,255,255,0.5);
-    font-weight: normal;
-    -webkit-transition: color 0.3s ease-out;
-    padding: 0 10px 0 0;
-  }
-  
-  .social a:hover {
-    color: #fff;
-    -webkit-transition: color 0.18s ease-in;
-  }
+h1,h2 { color: #fff; margin-top: 32px; text-transform: uppercase; margin-bottom: 14px;}
+h1 { font-size: 24px; font-weight: 200; }
+h2 { font-size: 14px; font-weight: normal; letter-spacing: 2px; }
 
-/* Social Icon Font ---------- */
+p { margin: 0 0 16px 0; }
 
-@font-face {
-  font-family: 'Mono Social Icons Font';
-  src: url('../fonts/MonoSocialIconsFont-1.10.eot');
-  src: url('../fonts/MonoSocialIconsFont-1.10.eot?') format('embedded-opentype'),
-       url('../fonts/MonoSocialIconsFont-1.10.woff') format('woff'),
-       url('../fonts/MonoSocialIconsFont-1.10.ttf') format('truetype'),
-       url('../fonts/MonoSocialIconsFont-1.10.svg') format('svg');
-  src: url('../fonts/MonoSocialIconsFont-1.10.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  }
+ul { list-style: none; }
+li { float: left; }
 
-.symbol, a.symbol:before {
-  font-family: 'Mono Social Icons Font';
-  -webkit-text-rendering: optimizeLegibility;
-  -moz-text-rendering: optimizeLegibility;
-  -ms-text-rendering: optimizeLegibility;
-  -o-text-rendering: optimizeLegibility;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-  -ms-font-smoothing: antialiased;
-  -o-font-smoothing: antialiased;
-  font-smoothing: antialiased;
-  }
+/* Containers, Grids, and More ---------- */
 
-a.symbol:before {
-  content: attr(title);
-  margin-right: 0.3em;
-  font-size: 20px;
-  }
-					
-/* Animation --------------------- */
-		
-@-webkit-keyframes fadein {
-	from  { opacity: 0; -webkit-transform: scale(0.95); }
-	to    { opacity: 1; -webkit-transform: scale(1); }
-}
-@-moz-keyframes fadein {
-	from  { opacity: 0; -moz-transform: scale(0.9); }
-	to    { opacity: 1; -moz-transform: scale(1); }
-}
-@-o-keyframes fadein {
-	from  { opacity: 0; -o-transform: scale(0.9); }
-	to    { opacity: 1; -o-transform: scale(1); }
-}
-@keyframes fadein {
-	from  { opacity: 0; transform: scale(0.9); }
-	to    { opacity: 1; transform: scale(1); }
-}
-  
+#container { padding: 10% 0 40px 10%; width: 80%; }
+.grid25 { display: inline; float: left; width: 25%; border-top: 1px solid #282828; }
+.grid25 div { padding: 0 25px 0 0; }
+
 #name, #work, #play, #social { opacity: 0; }
 
-#name {
-  -webkit-animation-delay: 0s;
-  -moz-animation-delay: 0s;
-  animation-delay: 0s;
-}
-#work {
-  -webkit-animation-delay: 0.9s;
-  -moz-animation-delay: 0.6s;
-  animation-delay: 0.6s;
-}
-#play {
-  -webkit-animation-delay: 1s;
-  -moz-animation-delay: 0.6s;
-  animation-delay: 0.6s;
-}
-.likes {
-  -webkit-animation-delay: 1.1s;
-  -moz-animation-delay: 0.75s;
-  animation-delay: 0.75s;
-}
-#social{
-  -webkit-animation-delay: 1.2s;
-  -moz-animation-delay: 0.8s;
-  animation-delay: 0.8s;
-}
+.title { font-size: 12px; font-weight: 100; }
 
-.grid25{
-  -webkit-animation-delay: 0.55s;
-  -moz-animation-delay: 0.15s;
-  animation-delay: 0.15s;
-}
+.social { font-size: 30px; margin-top: 32px; }
+.social a { border: none; color: rgba(255,255,255,0.5); font-weight: normal; -webkit-transition: color 0.3s ease-out; padding: 0 5px 0 0; }
+.social a:hover { color: #fff; -webkit-transition: color 0.17s ease-in; }
 
-.fadein {
-  -webkit-animation-name: fadein;
-	-webkit-animation-duration: 0.5s;
-	-webkit-animation-timing-function: ease-out;
-	-webkit-animation-fill-mode: both;
-	-moz-animation-name: fadein;
-	-moz-animation-duration: 0.5s;
-	-moz-animation-timing-function: ease-out;
-	-moz-animation-fill-mode: both;
-	animation-name: fadein;
-	animation-duration: 0.5s;
-	animation-timing-function: ease-out;
-	animation-fill-mode: both;
-  }
+.symbol, a.symbol:before { font-family: 'Mono Social Icons Font'; -webkit-text-rendering: optimizeLegibility; -moz-text-rendering: optimizeLegibility; -ms-text-rendering: optimizeLegibility; -o-text-rendering: optimizeLegibility; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased; font-smoothing: antialiased; }
+a.symbol:before { content: attr(title); margin-right: 0.3em; font-size: 20px; }
+					
+/* Page Fade+Zoom In --------------------- */
+		
+@-webkit-keyframes fadein { from  { opacity: 0; -webkit-transform: scale(0.95); } to { opacity: 1; -webkit-transform: scale(1); } }
+@-moz-keyframes fadein { from  { opacity: 0; -moz-transform: scale(0.9); } to { opacity: 1; -moz-transform: scale(1); } }
+@-o-keyframes fadein { from  { opacity: 0; -o-transform: scale(0.9); } to { opacity: 1; -o-transform: scale(1); } }
+@keyframes fadein { from  { opacity: 0; transform: scale(0.9); } to { opacity: 1; transform: scale(1); } }
 
-/* Break points ------------------ */
+#name { -webkit-animation-delay: 0s; -moz-animation-delay: 0s; animation-delay: 0s; }
+#work { -webkit-animation-delay: 0.9s; -moz-animation-delay: 0.9s; animation-delay: 0.9s; }
+#play { -webkit-animation-delay: 1s; -moz-animation-delay: 1s; animation-delay: 1s; }
+#social { -webkit-animation-delay: 1.1s; -moz-animation-delay: 1.1s; animation-delay: 1.1s; }
+
+.fadein { -webkit-animation-name: fadein; -webkit-animation-duration: 0.5s; -webkit-animation-timing-function: ease-out; -webkit-animation-fill-mode: both; -moz-animation-name: fadein; -moz-animation-duration: 0.5s; -moz-animation-timing-function: ease-out; -moz-animation-fill-mode: both; animation-name: fadein; animation-duration: 0.5s; animation-timing-function: ease-out; animation-fill-mode: both; }
+
+/* Get Big, Get Small, Get Responsive ------------------ */
 
 @media screen and (min-width: 1300px) and (min-height: 1100px) {
-  body {
-    font-size: 24px;
-    line-height: 32px;
-    }
+
+body { font-size: 24px; line-height: 32px; }
   
-  #container {
-    width: 84%;
-    }
-  
-  h1 {
-  	font-size: 68px;
-  	margin-bottom: 18px;
-    margin-top: 36px;
-  	}
-	
-  h2 {
-    font-size: 13px;
-    letter-spacing: 2px;
-    margin-top: 36px;
-    }
-  
-  .likes {
-    font-size: 18px;
-    line-height: 28px;
-    margin-top: 36px;
-    }
+#container { width: 84%; }
+
+h1 { font-size: 68px; margin-bottom: 18px; margin-top: 36px;  }
+h2 { font-size: 13px; letter-spacing: 2px; margin-top: 36px; }
     
-  .social {
-    font-size: 50px;
-    margin-top: 80px;
-    margin-left: -8px;
-    }
+.social { font-size: 50px; margin-top: 80px; margin-left: -8px; } 
+
 }
 
 @media screen and (max-width: 480px) {
 
-#container {
-  padding: 40px 8%;
-  width: 84%;
-}
-    
-#grid .grid25 {clear:both; width: 100%; padding: 0 0 24px 0;}
-		
-h1 { font-size: 28px; margin-bottom: 8px; }
+#container { padding: 40px 8%; width: 84%; }
+
+.grid25 {clear:both; width: 100%; padding: 0 0 24px 0;}
+.grid25 div { padding: 0; }
+
+h1 { font-size: 22px; margin-bottom: 8px; }
 h2 { font-size: 14px; font-weight: normal; }
-		
-p.title {font-size: 16px;}
-      
-.social { font-size: 38px; margin-top: 24px; }
+
+p { text-align: justify; }
+p.title { font-size: 12px;}
+.social { font-size: 32px; margin-top: 24px; }
+
+#name { -webkit-animation-delay: 0s; -moz-animation-delay: 0s; animation-delay: 0s; }
+#work, #play, .likes { -webkit-animation-delay: 0.15s; -moz-animation-delay: 0.15s; animation-delay: 0.15s; }
+
+}
