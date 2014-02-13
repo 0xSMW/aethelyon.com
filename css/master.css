@@ -43,6 +43,14 @@ table {
 *:first-child+html .clearfix {
 	min-height: 1px;
 	}
+
+/* Got DIN? YOU DO NOW! ---------- */
+@font-face {
+      font-family: 'Din';
+      src: url('..fonts/DIN.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+}
 	
 /* The Basics ---------- */
 html {
