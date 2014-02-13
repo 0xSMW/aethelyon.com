@@ -97,7 +97,7 @@ h2 { font-size: 14px; font-weight: normal; }
 
 p { text-align: justify; }
 p.title { font-size: 12px;}
-.social { font-size: 32px; margin-top: 24px; }
+.social { font-size: 65px; margin-top: 24px; }
 
 #name { -webkit-animation-delay: 0s; -moz-animation-delay: 0s; animation-delay: 0s; }
 #work, #play, .likes { -webkit-animation-delay: 0.15s; -moz-animation-delay: 0.15s; animation-delay: 0.15s; }
