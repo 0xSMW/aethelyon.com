@@ -19,7 +19,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 *:first-child+html .clearfix { min-height: 1px; }
 
 /* Got DIN? Got Mono Social? YOU DO NOW! ---------- */
-@font-face { font-family: 'Din'; src: url('..fonts/DIN.ttf') format('truetype'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Din'; src: url('../fonts/DIN.ttf') format('truetype'); font-weight: normal; font-style: normal; }
 @font-face { font-family: 'Mono Social Icons Font'; src: url('../fonts/MonoSocialIconsFont-1.10.eot'); src: url('../fonts/MonoSocialIconsFont-1.10.eot?') format('embedded-opentype'), url('../fonts/MonoSocialIconsFont-1.10.woff') format('woff'), url('../fonts/MonoSocialIconsFont-1.10.ttf') format('truetype'), url('../fonts/MonoSocialIconsFont-1.10.svg') format('svg'); src: url('../fonts/MonoSocialIconsFont-1.10.ttf') format('truetype'); font-weight: normal; font-style: normal; }
 	
 /* HTML Setup ---------- */
@@ -36,6 +36,8 @@ h2 { font-size: 14px; font-weight: normal; letter-spacing: 2px; }
 
 p { margin: 0 0 16px 0; }
 
+small { font-size: 0.8em;}
+
 ul { list-style: none; }
 li { float: left; }
 
@@ -47,7 +49,9 @@ li { float: left; }
 
 #name, #work, #play, #social { opacity: 0; }
 
-.title { font-size: 12px; font-weight: 100; }
+#social { text-align: right; }
+
+.title { font-size: 18px; font-weight: 100; }
 
 .social { font-size: 30px; margin-top: 32px; }
 .social a { border: none; color: rgba(255,255,255,0.5); font-weight: normal; -webkit-transition: color 0.3s ease-out; padding: 0 5px 0 0; }
@@ -96,10 +100,10 @@ h1 { font-size: 22px; margin-bottom: 8px; }
 h2 { font-size: 14px; font-weight: normal; }
 
 p { text-align: justify; }
-p.title { font-size: 12px;}
+p.title { font-size: 18px;}
 .social { font-size: 65px; margin-top: 24px; }
 
 #name { -webkit-animation-delay: 0s; -moz-animation-delay: 0s; animation-delay: 0s; }
-#work, #play, .likes { -webkit-animation-delay: 0.15s; -moz-animation-delay: 0.15s; animation-delay: 0.15s; }
+#work, #play, #social { -webkit-animation-delay: 0.25s; -moz-animation-delay: 0.25s; animation-delay: 0.25s; }
 
 }

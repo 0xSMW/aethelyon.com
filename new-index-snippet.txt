@@ -1,0 +1,3 @@
+ <meta name="description" content="Stephen M. Walker II is an entrepreneur and visual artist, living in Seattle. Currently the Principal UX Designer at Capital One ShareBuilder." />
+
+<p>Principal UX Designer at <a href="http://www.sharebuilder.com">Capital One ShareBuilder</a>, harnessing wall street investment power for your financial future.<br/><br/><a href="mailto:sharebuilder-feedback@aethelyon.com">Want to change something or don't like the way it works? Let me know, I am all ears.</a></p>
