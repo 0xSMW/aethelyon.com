@@ -49,8 +49,6 @@ li { float: left; }
 
 #name, #work, #play, #social { opacity: 0; }
 
-#social { text-align: right; }
-
 .title { font-size: 18px; font-weight: 100; }
 
 .social { font-size: 30px; margin-top: 32px; }
