@@ -9,7 +9,7 @@ ExpiresByType application/x-javascript A300
 ExpiresByType text/css A300 
 ExpiresByType text/html A300
 
-<FilesMatch "\.(js|css)$">
+<FilesMatch "\.(js|css|ttf|svg|eof)$">
   ExpiresDefault A604800
   Header append Cache-Control "public"
   Header unset Last-Modified
