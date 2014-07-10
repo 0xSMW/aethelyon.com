@@ -24,7 +24,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 /* HTML BASICS ---------- */
 
-html { height: 100%; }
+html { height: 100%; -webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale; }
 body { background: #222 ; background: -webkit-linear-gradient(top, #222 0%,#111 100%); background: linear-gradient(to bottom, #222 0%,#111 100%); background-repeat: no-repeat; background-attachment: fixed; color: rgba(255,255,255,0.7); font: 400 14px/24px 'Din', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif; height: 100%; margin: 0; -webkit-font-smoothing: antialiased; }
 a { border-bottom: 1px solid rgba(255,255,255,0.3); color: rgba(255,255,255,0.5); text-decoration: none; -webkit-transition: color 0.3s ease-out; }
 a:hover { color: rgba(255,255,255,1); -webkit-transition: color 0.18s ease-in; }
